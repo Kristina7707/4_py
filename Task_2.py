@@ -6,7 +6,7 @@ factors = []
 for i in range(2, int(number ** 0.5) + 2):
     while number % i == 0:
         factors.append(i)
-number /= i
+        number //= i
 if number != 1:
-    factors.append(int(number))
+    factors.append(number)
 print(f'Список простых множителей числа {N}: {factors}')
